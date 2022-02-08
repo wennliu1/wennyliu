@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    background-blend-mode: normal;
+    background: #806b43;
+    background-image: url(Assets/leaf.jpeg);
+    background-blend-mode: soft-light;
+    background-repeat: repeat;
+    background-size: cover;
+}
+body {
+    font-family: Andale Mono, monospace;
+    font-size: 18px;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    color: #d6c9af;
+    position: relative;
+    z-index: 1;
+}
+h1{
+    color: #4b351d;
+    font-size: 30px;
+    padding-left: 15px;
+}
+.about-me{
+    list-style-type: '>';
+}
+.intro{
+    padding-left: 15px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    text-decoration: none;
+    color: #4b351d;
+    font-size: 28px;
+    font-weight: bold;
+}
+.logo-box{
+    padding-left: 3%;
+    float: left;
+}
+.nav-links{
+    text-align: left;
+    background: #806b43;
+    border-bottom-left-radius: 20px;
+    opacity: 75%;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav-links ul li a{
+    color: #d6c9af;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 1s;
+    will-change: transform;
+}
+.inline-block{
+    display: inline-block;
+    color: #b49e72;
+    width: 100px;
+    position: relative;
+    transform: transition 3s;
+}
+.inline-block:hover .icon{
+    transform: scale(1.3);
+    opacity: 0.5;
+}
+.inline-block:hover .name{
+    opacity: 1;
+}
+.skillset{
+    padding-bottom: 3%;
+}
+.btn:hover{
+    background-color: #b49e72;
+    color: #d6c9af;
+    border: #b49e72 solid 1px;
+    letter-spacing: 5px;
+    box-shadow: 0 0 0px 10px #b49e72;
+}
+.home:hover{
+    background-color: #b49e72;
+    color: #d6c9af;
+    border: #b49e72 solid 1px;
+    letter-spacing: 5px;
+    box-shadow: 0 0 0px 10px #b49e72;
+    border-bottom-left-radius: 15px;
+    padding-left: 5px;
+}
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+.left-col{
+    flex-basis: 40%;
+}
+.back{
+    filter:blur(8px)
+}
+.right-col{
+    flex-basis: 55%;
+    padding-left: 20px;
+    background-color: hsl(0 0% 0% / 20%);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+    padding: 20px;
+}
+.left-col img{
+    width: 80%;
+    cursor: pointer;
+    transition: transform 1s;
+    will-change: transform;
+}
+.bridge:hover{
+    transform: scale(1.1);
+    filter: blur(0.7px);
+}
+.caption{
+    opacity:0;
+    color:#fff;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+.bridge-box:hover .caption{
+    opacity: 1;
+}
+.boat{
+    padding-top: 5%;
+}
+.boat:hover{
+    transform: scale(1.1);
+    filter: blur(0.7px);
+}
+.caption2{
+    opacity: 0;
+    color:#fff;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    top: 92%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+.boat-box:hover .caption2{
+    opacity: 1;
+}
+.skill-header{
+    padding-top: 5%;
+    padding-left: 5%;
+    color: rgba(255, 255, 255, 0.637);
+}
+.icon{
+    max-width: 100%;
+    height: auto;
+    padding-right: 2%;
+    transition: transform 0.5s;
+    position: relative;
+}
+.skill{
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 20%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    padding: 15px;
+    background-color: hsl(0 0% 0% / 20%);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+}
+
+.name{
+    font-size: 20px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.skill-box{
+    color: rgb(206, 193, 158);
+    background-color: #4b351d;
+    font-size: x-large;
+    margin-top: 4%;
+    margin-left: 7%;
+    float: left;
+}
